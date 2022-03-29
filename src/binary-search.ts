@@ -1,9 +1,9 @@
 const TARGET = 3;
-const ARRAY_LIST = [3, 2, 5, 1, 4, 8, 7, 6];
+const ARRAY_LIST: number[] = [3, 2, 5, 1, 4, 8, 7, 6];
 
 const SORTED_ARRAY = sortArray(ARRAY_LIST);
 
-function binarySearch(list, target) {
+function binarySearch(list: number[], target: number) {
   let low = 0;
   let high = ARRAY_LIST.length - 1;
 
@@ -24,7 +24,13 @@ function binarySearch(list, target) {
   return null;
 }
 
-function sortArray(arr) {
-  return arr.sort((a, b) => a - b);
+function sortArray(arr: number[]) {
+  return arr.sort((a: number, b: number) => a - b);
 }
 console.log(binarySearch(SORTED_ARRAY, TARGET));
+
+let dd = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("foo");
+  }, 300);
+});
