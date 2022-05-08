@@ -10,6 +10,4 @@ function miniMaxSum(arr: number[]): void {
   for (let index = 0; index < maxSortedArray.length - 1; index++) {
     maxSum += arr[index];
   }
-
-  console.log(`${minSum} ${maxSum}`);
 }

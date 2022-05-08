@@ -27,10 +27,5 @@ function binarySearch(list: number[], target: number) {
 function sortArray(arr: number[]) {
   return arr.sort((a: number, b: number) => a - b);
 }
-console.log(binarySearch(SORTED_ARRAY, TARGET));
 
-let dd = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("foo");
-  }, 300);
-});
+console.log(binarySearch(SORTED_ARRAY, TARGET));
